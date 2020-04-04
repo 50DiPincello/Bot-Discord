@@ -3,6 +3,7 @@ import random
 import os
 from discord.ext import commands, tasks
 from itertools import cycle
+asdasd
 
 client = commands.Bot(command_prefix = '.')
 status = cycle(['E ora pess', 'Bota uma jiga', 'Não me apetece dar a jiga', 'Hacieee'])
