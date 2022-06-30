@@ -19,23 +19,11 @@ async def on_member_join(member):
 
 @client.event
 async def on_member_remove(member):
-    print(f'Hacie {member} foste cu caralho')
+    print(f'Hacieee {member}')
 
 @client.command()
 async def ping(ctx):
     await ctx.send(f'Pong! {round(client.latency * 1000)}ms')
-
-@client.command()
-async def Ginha(ctx):
-    await ctx.send('Porca 1.º campeonato de porcalhonas mundiais')
-
-@client.command()
-async def Nanda(ctx):
-    await ctx.send('Porca 2.º campeonato de porcalhonas mundiais')
-
-@client.command()
-async def Paula(ctx):
-    await ctx.send('Porquinha 1.º torneio, vencedora do mini-torneio de angariação de fundos')
 
 @client.command()
 async def lema(ctx):
@@ -44,13 +32,11 @@ async def lema(ctx):
 @client.command(aliases=['8ball', 'test'])
 async def _8ball(ctx, *, question):
     responses = ['É o mais certo.',
-                 'Tás puta chato.',
+                 'Tás chato.',
                  'Não percebi, podes repetir?',
-                 'Fds para ouvir essa pergunta mais valia ser surdo como o Tone.',
                  'Adegz',
                  'Ah yepz',
                  'Ah de nuapz',
-                 'Claro que sim, mas chupa-me a gaita',
                  'Se calhar sim, se calhar não, sabão não é de certeza',
                  'O que é que isso importa, o Paulo tá de chamadz',
                  'Não vou responder a isso, tás burro',
@@ -58,10 +44,8 @@ async def _8ball(ctx, *, question):
                  'Vocês são fodidos ahahah',
                  'Quem me dera saber responder a isso, sou apenas um bot :(',
                  '27',
-                 'Já chega de perguntas caralho',
-                 'Cala-te',
-                 'És viciado em sexo mano',
-                 'A tua velha tá morta']
+                 'Já chega de perguntas',
+                 'Cala-te']
     await ctx.send(f'Pergunta: {question}\nResposta: {random.choice(responses)}')
 
 @client.command(aliases=['defecz'])
@@ -143,7 +127,7 @@ async def clear(ctx, amount : int):
 @clear.error
 async def clear_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send('Diz quantas queres apagar caralho')
+        await ctx.send('Diz quantas queres apagar não?')
 
 
 
